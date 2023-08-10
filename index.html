@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #head {
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.548);
+            text-shadow: 10px;
+            font-weight: 600;
+        }
+
+        #submit {
+            margin-top: 10px;
+            padding: 7px 35px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #000000fd;
+            color: wheat;
+        }
+
+        #reset {
+            margin-top: 10px;
+            padding: 7px 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #000000fd;
+            color: wheat;
+        }
+
+        #section1 {
+            text-align: center;
+            background-color: rgba(155, 155, 155, 0.426);
+            padding: 50px;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        input {
+            padding: 10px 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+    <form>
+        <div id="section1">
+            <div id="head">Tax calculator</div>
+            <input type="number" id="number" placeholder="Amount Rs" onkeyup="clc()">
+            <div id="x">.</div>
+            
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
